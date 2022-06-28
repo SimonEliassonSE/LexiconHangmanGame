@@ -1,0 +1,15 @@
+L:\C# Projects\LexiconHangmanGame\LexiconHangmanGame\LexiconHangmanGame\bin\Debug\net6.0\LexiconHangmanGame.exe
+L:\C# Projects\LexiconHangmanGame\LexiconHangmanGame\LexiconHangmanGame\bin\Debug\net6.0\LexiconHangmanGame.deps.json
+L:\C# Projects\LexiconHangmanGame\LexiconHangmanGame\LexiconHangmanGame\bin\Debug\net6.0\LexiconHangmanGame.runtimeconfig.json
+L:\C# Projects\LexiconHangmanGame\LexiconHangmanGame\LexiconHangmanGame\bin\Debug\net6.0\LexiconHangmanGame.dll
+L:\C# Projects\LexiconHangmanGame\LexiconHangmanGame\LexiconHangmanGame\bin\Debug\net6.0\LexiconHangmanGame.pdb
+L:\C# Projects\LexiconHangmanGame\LexiconHangmanGame\LexiconHangmanGame\obj\Debug\net6.0\LexiconHangmanGame.csproj.AssemblyReference.cache
+L:\C# Projects\LexiconHangmanGame\LexiconHangmanGame\LexiconHangmanGame\obj\Debug\net6.0\LexiconHangmanGame.GeneratedMSBuildEditorConfig.editorconfig
+L:\C# Projects\LexiconHangmanGame\LexiconHangmanGame\LexiconHangmanGame\obj\Debug\net6.0\LexiconHangmanGame.AssemblyInfoInputs.cache
+L:\C# Projects\LexiconHangmanGame\LexiconHangmanGame\LexiconHangmanGame\obj\Debug\net6.0\LexiconHangmanGame.AssemblyInfo.cs
+L:\C# Projects\LexiconHangmanGame\LexiconHangmanGame\LexiconHangmanGame\obj\Debug\net6.0\LexiconHangmanGame.csproj.CoreCompileInputs.cache
+L:\C# Projects\LexiconHangmanGame\LexiconHangmanGame\LexiconHangmanGame\obj\Debug\net6.0\LexiconHangmanGame.dll
+L:\C# Projects\LexiconHangmanGame\LexiconHangmanGame\LexiconHangmanGame\obj\Debug\net6.0\refint\LexiconHangmanGame.dll
+L:\C# Projects\LexiconHangmanGame\LexiconHangmanGame\LexiconHangmanGame\obj\Debug\net6.0\LexiconHangmanGame.pdb
+L:\C# Projects\LexiconHangmanGame\LexiconHangmanGame\LexiconHangmanGame\obj\Debug\net6.0\LexiconHangmanGame.genruntimeconfig.cache
+L:\C# Projects\LexiconHangmanGame\LexiconHangmanGame\LexiconHangmanGame\obj\Debug\net6.0\ref\LexiconHangmanGame.dll
