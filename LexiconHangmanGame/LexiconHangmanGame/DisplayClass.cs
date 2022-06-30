@@ -26,6 +26,7 @@ namespace LexiconHangmanGame
                 " - You could either geuss a letter and get a confirmation weither its correct or not\n" +
                 "   or geuss on the whole word directly, if correct you win \n" +
                 "   if wrong 1 geuss is used and you will not get a confirmation wither any of the letters was correct\n");
+            
             LetTheGameBegin();
 
         }
@@ -34,27 +35,21 @@ namespace LexiconHangmanGame
         {
             Console.WriteLine(
                 "|----------------------------------------------------------|\n" +
-                "| The game will now begin!                                 |\n" +
+                "| Press enter to begin!                                    |\n" +
                 "|----------------------------------------------------------|\n");
         }
 
-        public static void SingelCharracterInput()
-        {
-            Console.WriteLine();
-        }
-
-        public static void FullWordInput()
-        {
-            Console.WriteLine();
-        }
+       
 
         public static void HangManIllustration(int wrongAnswer)
         {
 
             switch (wrongAnswer)
-            {
+            {           
+
                 case 1:
                     {
+                        Console.Clear();
                         Console.WriteLine("\n" +
                                           "+-------+");
                         Console.WriteLine("        |");
@@ -68,6 +63,7 @@ namespace LexiconHangmanGame
 
                 case 2:
                     {
+                        Console.Clear();
                         Console.WriteLine("\n" +
                                           "+-------+");
                         Console.WriteLine("    |   |");
@@ -81,6 +77,7 @@ namespace LexiconHangmanGame
 
                 case 3:
                     {
+                        Console.Clear();
                         Console.WriteLine("\n" +
                                           "+-------+");
                         Console.WriteLine("    |   |");
@@ -94,6 +91,7 @@ namespace LexiconHangmanGame
 
                 case 4:
                     {
+                        Console.Clear();
                         Console.WriteLine("\n" +
                                           "+-------+");
                         Console.WriteLine("    |   |");
@@ -107,6 +105,7 @@ namespace LexiconHangmanGame
 
                 case 5:
                     {
+                        Console.Clear();
                         Console.WriteLine("\n" +
                                           "+-------+");
                         Console.WriteLine("    |   |");
@@ -120,6 +119,7 @@ namespace LexiconHangmanGame
 
                 case 6:
                     {
+                        Console.Clear();
                         Console.WriteLine("\n" +
                                           "+-------+");
                         Console.WriteLine("    |   |");
@@ -133,6 +133,7 @@ namespace LexiconHangmanGame
 
                 case 7:
                     {
+                        Console.Clear();
                         Console.WriteLine("\n" +
                                           "+-------+");
                         Console.WriteLine("    |   |");
@@ -146,6 +147,7 @@ namespace LexiconHangmanGame
 
                 case 8:
                     {
+                        Console.Clear();
                         Console.WriteLine("\n" +
                                           "+-------+");
                         Console.WriteLine("    |   |");
@@ -159,6 +161,7 @@ namespace LexiconHangmanGame
 
                 case 9:
                     {
+                        Console.Clear();
                         Console.WriteLine("\n" +
                                           "+--------+");
                         Console.WriteLine("[R] |    |");
@@ -172,6 +175,7 @@ namespace LexiconHangmanGame
 
                 case 10:
                     {
+                        Console.Clear();
                         Console.WriteLine("\n" +
                                           "+--------+");
                         Console.WriteLine("[R] | [P]|");
@@ -180,11 +184,31 @@ namespace LexiconHangmanGame
                         Console.WriteLine("   / \\   |");
                         Console.WriteLine("         |");
                         Console.WriteLine("        ===");
+                        Console.WriteLine("\n--!!Game Over!!--");
                         break;
                     }
 
 
             }
+        }
+
+        public static bool GoAgainDisplay()
+        {
+            bool isDead = true;
+            string stopOrGo = InputCollectingClass.GoAgain();
+
+            if (stopOrGo == "y")
+            {
+                isDead = false;
+                
+            }
+            else if (stopOrGo == "n")
+            {
+                isDead = true;
+                
+            }
+            Console.Clear();
+            return isDead;
         }
 
     }
