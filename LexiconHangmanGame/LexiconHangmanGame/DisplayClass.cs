@@ -26,7 +26,7 @@ namespace LexiconHangmanGame
                 " - You could either geuss a letter and get a confirmation weither its correct or not\n" +
                 "   or geuss on the whole word directly, if correct you win \n" +
                 "   if wrong 1 geuss is used and you will not get a confirmation wither any of the letters was correct\n");
-            
+
             LetTheGameBegin();
 
         }
@@ -39,7 +39,7 @@ namespace LexiconHangmanGame
                 "|----------------------------------------------------------|\n");
         }
 
-       
+
 
         public static void HangManIllustration(int wrongAnswer)
         {
@@ -199,7 +199,7 @@ namespace LexiconHangmanGame
                         Console.WriteLine("         |");
                         Console.WriteLine("        ===");
                         Console.WriteLine("           ");
-                        Console.WriteLine("\n--!!Game Over!!--");                        
+                        Console.WriteLine("\n--!!Game Over!!--");
                         break;
                     }
 
@@ -215,15 +215,34 @@ namespace LexiconHangmanGame
             if (stopOrGo == "y")
             {
                 isDead = false;
-                
+
             }
             else if (stopOrGo == "n")
             {
                 isDead = true;
-                
+
             }
             Console.Clear();
             return isDead;
+        }
+
+        public static void GeussedSoFar(int totalGeusses, char[] userRandomWordArray, StringBuilder previuslyGeussedChars)
+        {
+
+            foreach (var item in userRandomWordArray)
+            {
+                Console.Write(" " + item);
+            }
+            Console.WriteLine();
+            Console.WriteLine($"gessues used: {totalGeusses}");
+            Console.WriteLine($"Already gessued char's: {previuslyGeussedChars}");
+            Console.Write("Full word geussed so far: ");
+            foreach (var item in DataClass.geussedWordsSoFar)
+            {
+                Console.Write($"{item} ,");
+            }
+            Console.WriteLine("\n");
+
         }
 
     }

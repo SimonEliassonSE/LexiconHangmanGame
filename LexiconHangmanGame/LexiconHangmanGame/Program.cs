@@ -31,22 +31,12 @@ while (!isDead)
         alreadyGeussed = false;
         matchedFound = false;
         alreadyGeussedChar = false;
+
         DisplayClass.HangManIllustration(totalGeusses);
         Console.WriteLine();
-        foreach (var item in userRandomWordArray)
-        {
-            Console.Write(" " + item);
-        }
-        Console.WriteLine();
-        Console.WriteLine($"gessues used: {totalGeusses}");
-        Console.WriteLine($"Already gessued char's: {previuslyGeussedChars}");
-        Console.Write("Full word geussed so far: ");
-        foreach (var item in DataClass.geussedWordsSoFar)
-        {
-            Console.Write($"{item} ,");
-        }
-        Console.WriteLine("\n");
+        DisplayClass.GeussedSoFar(totalGeusses, userRandomWordArray, previuslyGeussedChars);        
         string playerGeuss = InputCollectingClass.GetUserGeuss().ToLower();       
+
         // Om playerInput är 1 längd så är det en char. 
         if (playerGeuss.Length == 1)
         {
