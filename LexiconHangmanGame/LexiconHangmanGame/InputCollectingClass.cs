@@ -44,7 +44,9 @@ namespace LexiconHangmanGame
             do
             {
                 invalid = false;
-                Console.WriteLine("Go again [y] stop [n] ");
+                Console.WriteLine("|-----------------------|");
+                Console.WriteLine("| Go again [y] stop [n] |");
+                Console.WriteLine("|-----------------------|");
                 userResponse = Console.ReadLine();
                 if (string.IsNullOrEmpty(userResponse))
                 {

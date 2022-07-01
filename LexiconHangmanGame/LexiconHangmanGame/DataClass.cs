@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace LexiconHangmanGame
 {
-    
+    // Gör en stringbuild som samlar alla fel svar
+        // Gör en metod som förhindrar att antalet gissningar ökar om ordet är fel men har gissats tidigare!
     internal class DataClass
     {
         public static List<string> geussedWordsSoFar = new List<string>();
@@ -15,7 +16,7 @@ namespace LexiconHangmanGame
 
         public static string GetRandomWord()
         {
-            string[] wordPool = new string[] { "dog", "cat", "pig", "pigeons", "parrot", "horse", "cow", "sheep", "llama", "giraffe"};
+            string[] wordPool = new string[] { "gorilla", "baboon", "butterfly", "pigeon", "parrot", "horse", "caterpillar", "sheep", "llama", "giraffe"};
             var rand = new Random();
             int index = rand.Next(wordPool.Length);            
             string randomWord = wordPool[index];                        
@@ -41,7 +42,7 @@ namespace LexiconHangmanGame
             Console.Write("Geussed words so far: ");
             foreach (var word in geussedWordsSoFar)
             {
-            Console.Write($"{word}, ");
+            Console.Write($" {word},");
             }
             Console.WriteLine();
             return totalGeusses;

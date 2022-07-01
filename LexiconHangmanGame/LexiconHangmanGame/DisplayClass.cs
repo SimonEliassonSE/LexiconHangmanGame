@@ -45,7 +45,21 @@ namespace LexiconHangmanGame
         {
 
             switch (wrongAnswer)
-            {           
+            {
+
+                case 0:
+                    {
+                        Console.Clear();
+                        Console.WriteLine("\n" +
+                                          "        +");
+                        Console.WriteLine("        |");
+                        Console.WriteLine("        |");
+                        Console.WriteLine("        |");
+                        Console.WriteLine("        |");
+                        Console.WriteLine("        |");
+                        Console.WriteLine("       ===");
+                        break;
+                    }
 
                 case 1:
                     {
@@ -184,7 +198,8 @@ namespace LexiconHangmanGame
                         Console.WriteLine("   / \\   |");
                         Console.WriteLine("         |");
                         Console.WriteLine("        ===");
-                        Console.WriteLine("\n--!!Game Over!!--");
+                        Console.WriteLine("           ");
+                        Console.WriteLine("\n--!!Game Over!!--");                        
                         break;
                     }
 
