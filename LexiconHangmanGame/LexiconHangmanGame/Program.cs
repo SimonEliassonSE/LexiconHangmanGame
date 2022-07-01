@@ -32,7 +32,7 @@ while (!isDead)
         matchedFound = false;
         alreadyGeussedChar = false;
 
-        DisplayClass.HangManIllustration(totalGeusses);
+        DisplayClass.HangManIllustration(totalGeusses);        
         Console.WriteLine();
         DisplayClass.GeussedSoFar(totalGeusses, userRandomWordArray, previuslyGeussedChars);        
         string playerGeuss = InputCollectingClass.GetUserGeuss().ToLower();       
@@ -70,16 +70,13 @@ while (!isDead)
                 }
                
             }
-            // Om ingen match funnits mot den korrekta arrayen ökas antalet felaktiga gissningar med 1 
-            
-            
+                // Om ingen match funnits mot den korrekta arrayen ökas antalet felaktiga gissningar med 1   
                 if (!matchedFound && !alreadyGeussed && !alreadyGeussedChar)
                 {
                     // Lägger till fel ord i gissade ord.
                     previuslyGeussedChars.Append(c + ",");
                     totalGeusses++;
-                }
-            
+                }            
 
             // Kollar för & se om alla bokstäverna har hittats, om så är fallet är spelet över
             if (matchedFound)
@@ -87,6 +84,10 @@ while (!isDead)
                 bool isEqual = Enumerable.SequenceEqual(userRandomWordArray, correctRandomCharArray);
                 if (isEqual)
                 {
+                    Console.Clear();
+                    DisplayClass.HangManIllustration(totalGeusses);
+                    Console.WriteLine();
+                    DisplayClass.GeussedSoFar(totalGeusses, userRandomWordArray, previuslyGeussedChars);
                     Console.WriteLine("Congratulation you won the game!");
                     correctGeuss = true;
                 }
